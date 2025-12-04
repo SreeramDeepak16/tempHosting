@@ -1,6 +1,4 @@
 FROM nginx:alpine
-WORKDIR /app
-COPY ./ .
+COPY . /usr/share/nginx/html
 EXPOSE 5000
-ENV NAME=World
-CMD ["python","app.py"]
+
